@@ -1,0 +1,51 @@
+:root{
+    --clock-bg-color: #acacac;
+    --transparent: #ffffff11;
+    --cell-color: #333333;
+    --lit-color: #033dbf;
+}
+
+body{
+    background: black;
+}
+#main{
+    border: thin var(--clock-bg-color) solid;
+    background: var(--clock-bg-color);
+    border-radius: 5px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0px;
+    left:0px;
+    position: fixed;
+}
+#human-time{
+    color: white;
+    text-align: center;
+    
+}
+.col{
+    border: thin var(--transparent) solid;
+    background: var(--transparent);
+    width: 200px;
+    height: 500px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.cell{
+    width: 60px;
+    height: 60px;
+    background: var(--cell-color);
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.lit{
+    background: var(--lit-color);
+    box-shadow: inset #ffffff66 0px 0px 20px 0px;
+}
